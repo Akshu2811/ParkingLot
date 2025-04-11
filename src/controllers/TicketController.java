@@ -23,7 +23,8 @@ public class TicketController {
                     request.getLicensePlate(),
                     request.getOwnerName(),
                     request.getGateId(),
-                    request.getVehicleType());
+                    request.getVehicleType(),
+                    request.getParkingLotId());
             response.setTicketId(ticket.getId());
             response.setSlotNumber(ticket.getParkingSlot().getNumber());
             response.setFloorNumber(ticket.getParkingSlot().getParkingFloor().getNumber());

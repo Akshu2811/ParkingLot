@@ -1,5 +1,7 @@
 package models;
 
+import strategies.SlotAllocationStrategy;
+
 import java.util.List;
 
 public class ParkingLot extends BaseModel {
@@ -8,6 +10,7 @@ public class ParkingLot extends BaseModel {
     private List<ParkingFloor> parkingFloors;
     private String address;
     private List<Gate> gates;
+    private SlotAllocationStrategy slotAllocationStrategy;
 
     public String getName() {
         return name;
@@ -47,5 +50,13 @@ public class ParkingLot extends BaseModel {
 
     public void setGates(List<Gate> gates) {
         this.gates = gates;
+    }
+
+    public SlotAllocationStrategy getSlotAllocationStrategy() {
+        return slotAllocationStrategy;
+    }
+
+    public void setSlotAllocationStrategy(SlotAllocationStrategy slotAllocationStrategy) {
+        this.slotAllocationStrategy = slotAllocationStrategy;
     }
 }

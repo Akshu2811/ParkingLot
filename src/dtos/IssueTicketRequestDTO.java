@@ -1,5 +1,6 @@
 package dtos;
 
+import models.ParkingLot;
 import models.VehicleType;
 
 public class IssueTicketRequestDTO {
@@ -8,6 +9,7 @@ public class IssueTicketRequestDTO {
     private String ownerName;
     private int gateId;
     private VehicleType vehicleType;
+    private int parkingLotId;
 
     public String getLicensePlate() {
         return licensePlate;
@@ -39,5 +41,13 @@ public class IssueTicketRequestDTO {
 
     public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
+    }
+
+    public int getParkingLotId() {
+        return parkingLotId;
+    }
+
+    public void setParkingLotId(int parkingLotId) {
+        this.parkingLotId = parkingLotId;
     }
 }
