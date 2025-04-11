@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
     }
 }
+
+//Feature : Ticket Generation
+
+// Input: GateId,License Plate,Owner Name,vehicleType
+// Output:all the ticket details specifically slot
+
+//TicketController: ticket models is being more focussed on
